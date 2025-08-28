@@ -1,35 +1,71 @@
-<header class="topbar">
-    <div class="topbar-container">
-        <!-- Logo -->
-        <div class="logo">
-            <img src="logo.png" alt="Dakika Haber Logo">
-        </div>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dakika Haber</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <!-- Search Bar -->
-        <div class="search">
-            <input type="text" placeholder="Haber ara...">
-        </div>
+  <!-- ÜST KIRMIZI BAR -->
+  <header class="topbar">
+    <div class="topbar-container" style="display:flex; align-items:center; justify-content:space-between; padding:10px; background-color:red;">
+      
+      <!-- LOGO -->
+      <div class="logo">
+        <img src="logo.png" alt="Dakika Haber Logo" style="height:40px;">
+      </div>
+      
+      <!-- ARAMA -->
+      <div class="search">
+        <input type="text" placeholder="🔍️ En yeni haberleri ara..." style="padding:5px 10px; border-radius:20px; border:none; outline:none;">
+      </div>
+      
+      <!-- YouTube linki: logo + yazı -->
+      <a href="https://www.youtube.com/@BeratizmYouTubee" target="_blank" style="color:white; text-decoration:none; display:flex; align-items:center; font-weight:bold;">
+        <!-- YouTube logosu -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube" style="height:24px; margin-right:5px;">
+        <!-- YouTube yazısı -->
+      </a>
 
-        <!-- Sağdaki Butonlar -->
-        <div class="topbar-right">
-            <a href="#">📺 Tv</a>
-            <a href="#"><strong>PLUS+</strong></a>
-            <a href="#">☰</a>
-        </div>
     </div>
-</header>
+  </header>
 
-<!-- Alt Menü -->
-<nav class="main-nav">
+  <!-- ALT BEYAZ KATEGORİ MENÜSÜ -->
+  <nav class="main-nav" style="background-color:white; padding:10px 20px; display:flex; gap:15px; flex-wrap:wrap;">
+    <a href="#">ANA HABER</a>
     <a href="#">SON DAKİKA</a>
-    <a href="#">YAZARLAR</a>
     <a href="#">GÜNDEM</a>
+    <a href="#">OYUN</a>
     <a href="#">EKONOMİ</a>
     <a href="#">DÜNYA</a>
-    <a href="#">GÜNÜN İÇİNDEN</a>
     <a href="#">SPOR</a>
-    <a href="#">HAYAT</a>
     <a href="#">MAGAZİN</a>
-    <a href="#">FİNANS</a>
-    <a href="#">RESMİ İLANLAR</a>
-</nav>
+    <a href="#">TEKNOLOJİ</a>
+  </nav>
+<!-- Haberler bölümü -->
+<section class="news-section" style="padding:20px; display:flex; flex-wrap:wrap; gap:20px; justify-content:center; background:#f5f5f5;">
+  
+  <!-- Haber kartı örneği -->
+  <div class="news-card" style="background:white; border-radius:10px; overflow:hidden; width:300px; transition: transform 0.3s, box-shadow 0.3s;">
+    <img src="https://via.placeholder.com/300x180" alt="Haber Başlığı" style="width:100%; height:auto;">
+    <div style="padding:10px;">
+      <h3 style="margin:0 0 10px 0;">Kerem Aktürkoğlu'nun golüyle Şampiyonlar Ligi'nde veda eden Fenerbahçe, 27.5M€'luk geliri kaçırdı. 1</h3>
+    </div>
+  </div>
+
+  <div class="news-card" style="background:white; border-radius:10px; overflow:hidden; width:300px; transition: transform 0.3s, box-shadow 0.3s;">
+    <img src="https://via.placeholder.com/300x180" alt="Haber Başlığı" style="width:100%; height:auto;">
+    <div style="padding:10px;">
+      <h3 style="margin:0 0 10px 0;">Haber Başlığı 2</h3>
+      <p style="margin:0; font-size:14px; color:#555;">Bu bölüm kısa haber açıklamasını içerir. Kullanıcıya hızlıca bilgi verir.</p>
+    </div>
+  </div>
+
+  <!-- İstediğin kadar kart ekleyebilirsin -->
+
+</section>
+
+</body>
+</html>
