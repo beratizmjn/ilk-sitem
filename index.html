@@ -22,12 +22,9 @@
         <input type="text" placeholder="🔍️ En yeni haberleri ara..." style="padding:5px 10px; border-radius:20px; border:none; outline:none;">
       </div>
       
-      <!-- YouTube linki: logo + yazı -->
-      <a href="https://www.youtube.com/@BeratizmYouTubee" target="_blank" style="color:white; text-decoration:none; display:flex; align-items:center; font-weight:bold;">
-        <!-- YouTube logosu -->
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube" style="height:24px; margin-right:5px;">
-        <!-- YouTube yazısı -->
-      </a>
+<!-- Menü ikonu (hamburger) -->
+<div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+
 
     </div>
   </header>
@@ -49,23 +46,82 @@
   
   <!-- Haber kartı örneği -->
   <div class="news-card" style="background:white; border-radius:10px; overflow:hidden; width:300px; transition: transform 0.3s, box-shadow 0.3s;">
-    <img src="https://via.placeholder.com/300x180" alt="Haber Başlığı" style="width:100%; height:auto;">
+    <img src="resim.jpg" alt="Haber Başlığı" style="width:100%; height:auto;">
     <div style="padding:10px;">
-      <h3 style="margin:0 0 10px 0;">Kerem Aktürkoğlu'nun golüyle Şampiyonlar Ligi'nde veda eden Fenerbahçe, 27.5M€'luk geliri kaçırdı. 1</h3>
+      <h3 style="margin:0 0 10px 0;">Kerem Aktürkoğlu'nun golüyle Şampiyonlar Ligi'nde veda eden Fenerbahçe, 27.5M€'luk geliri kaçırdı. </h3>
     </div>
   </div>
+
+<!-- SAYFA UZATMAK İÇİN BOŞ ALAN -->
+<div class="page-space"></div>
+  <p>Daha fazla haber için beklemede kalın...</p>
+</div>
+
 
   <div class="news-card" style="background:white; border-radius:10px; overflow:hidden; width:300px; transition: transform 0.3s, box-shadow 0.3s;">
-    <img src="https://via.placeholder.com/300x180" alt="Haber Başlığı" style="width:100%; height:auto;">
+    <img src="yunus.jpg" alt="Haber Başlığı" style="width:100%; height:auto;">
     <div style="padding:10px;">
-      <h3 style="margin:0 0 10px 0;">Haber Başlığı 2</h3>
-      <p style="margin:0; font-size:14px; color:#555;">Bu bölüm kısa haber açıklamasını içerir. Kullanıcıya hızlıca bilgi verir.</p>
+      <h3 style="margin:0 0 10px 0;"> Yunusular Artık Sevişmek İstemiyor </h3>
     </div>
   </div>
 
-  <!-- İstediğin kadar kart ekleyebilirsin -->
+<!-- SAYFA UZATMAK İÇİN BOŞ ALAN -->
+<div class="page-space"></div>
+  <p>Daha fazla haber için beklemede kalın...</p>
+</div>
+
 
 </section>
+<!-- Sol Son Dakika Çubuğu -->
+<div class="side-bar left">SON DAKİKA</div>
+
+<!-- Sağ Çizgi -->
+<div class="side-bar right">SON DAKİKA</div>
+
+<!-- ALT BİLGİ (FOOTER) -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Dakika Haber</h3>
+      <p>En güncel haberleri tarafsız ve hızlı bir şekilde sizlere sunuyoruz.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Hızlı Linkler</h4>
+      <ul>
+        <li><a href="#">Ana Sayfa</a></li>
+        <li><a href="#">Hakkımızda</a></li>
+        <li><a href="#">İletişim</a></li>
+        <li><a href="#">Gizlilik Politikası</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>İletişim</h4>
+      <p>Email: info@dakikahaber.com</p>
+      <p>Tel: +90 550 500 00 00</p>
+    </div>
+<!-- BURAYA EKLENECEK -->
+  <div class="footer-social">
+    <h4>Bizi Takip Edin</h4>
+    <a href="https://www.instagram.com/seninhesabin" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+      Instagram
+    </a>
+    <a href="https://www.tiktok.com/@seninhesabin" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" alt="TikTok">
+      TikTok
+    </a>
+  </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Dakika Haber. Tüm hakları saklıdır.</p>
+  </div>
+</footer>
+ 
+<script>
+function toggleMenu() {
+  document.querySelector(".main-nav").classList.toggle("show");
+}
+</script>
 
 </body>
 </html>

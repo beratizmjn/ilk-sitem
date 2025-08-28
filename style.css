@@ -126,4 +126,164 @@ body {
   box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* Gölge efekti */
 }
 
+.side-bar {
+  position: fixed;
+  top: 60px;              /* üst bar yüksekliği kadar boşluk */
+  bottom: 0;              /* en alta kadar insin */
+  width: 40px;            /* çizgi genişliği */
+  background-color: red;  /* çizgi rengi */
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  writing-mode: vertical-rl;   /* yazıyı dikey yapar */
+  text-orientation: upright;   /* harfler düzgün dursun */
+  display: flex;
+  justify-content: center;     /* ortadan hizala */
+  align-items: center;
+  z-index: 1000;
+}
+
+.side-bar.left {
+  left: 0;
+}
+
+.side-bar.right {
+  right: 0;
+}
+
+.site-footer {
+  background-color: #222;
+  color: #ddd;
+  padding: 40px 20px 20px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-container div {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-container h3,
+.footer-container h4 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-container p,
+.footer-container a {
+  font-size: 14px;
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.page-space {
+  height: 1000px;   /* sayfayı uzatacak boşluk yüksekliği */
+}
+.page-space {
+  height: 800px;                 /* Sayfayı uzatacak boşluk */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #555;
+  background: #f9f9f9;           /* Açık gri arka plan */
+  margin-top: 30px;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+}
+.footer-social {
+  margin-top: 15px;
+}
+
+.footer-social h4 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-social a img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.footer-social a:hover {
+  color: #fff;
+}
+
+/* Menü ikonu */
+.menu-toggle {
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+  display: none; /* sadece küçük ekranlarda gösterilecek */
+  margin-left: 15px;
+}
+
+/* Menü gizli olacak, hamburger tıklanınca açılacak */
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* küçük ekran için */
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;              /* varsayılan: gizli */
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 60px;                  /* üst kırmızı barın altından başlasın */
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  .main-nav.show {
+    display: flex;              /* açılınca görünsün */
+  }
+
+  .menu-toggle {
+    display: block;             /* hamburgeri göster */
+  }
+}
+
+
+
+
 
