@@ -52,3 +52,61 @@ header nav a {
     text-decoration: none;
     margin-right: 15px;
 }
+
+/* Genel */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Üst kırmızı bar */
+.topbar {
+    background-color: #e60000;
+    color: white;
+    padding: 10px 20px;
+}
+
+.topbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo img {
+    height: 40px;
+}
+
+/* Arama kutusu */
+.search input {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    width: 200px;
+}
+
+/* Sağdaki butonlar */
+.topbar-right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+/* Alt beyaz kategori menüsü */
+.main-nav {
+    background-color: white;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.main-nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+}
